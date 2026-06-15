@@ -1,20 +1,20 @@
 # Libft
 
-Reimplementação em C de funções essenciais da biblioteca padrão (`libc`), além de funções utilitárias adicionais. Projeto desenvolvido na **42 Barcelona** como base para os projetos futuros do currículo.
+Reimplementation in C of essential functions from the standard library (`libc`), along with additional utility functions. Project developed at **42 Barcelona** as a foundation for future curriculum projects.
 
 ---
 
-## Funções
+## Functions
 
-## Checagem de Caracteres
+## Character Checks
 
 ### **ft_isalpha**
 
 ```c
 int ft_isalpha(int c)
 ```
-Verifica se o caractere é uma letra (a–z / A–Z).
-Retorna `1` se verdadeiro, `0` se falso.
+Checks whether the character is a letter (a–z / A–Z).
+Returns `1` if true, `0` if false.
 
 ---
 
@@ -23,8 +23,8 @@ Retorna `1` se verdadeiro, `0` se falso.
 ```c
 int ft_isdigit(int c)
 ```
-Verifica se o caractere é um dígito (0–9).
-Retorna `1` se verdadeiro, `0` se falso.
+Checks whether the character is a digit (0–9).
+Returns `1` if true, `0` if false.
 
 ---
 
@@ -33,8 +33,8 @@ Retorna `1` se verdadeiro, `0` se falso.
 ```c
 int ft_isalnum(int c)
 ```
-Verifica se o caractere é alfanumérico (letra ou dígito).
-Retorna `1` se verdadeiro, `0` se falso.
+Checks whether the character is alphanumeric (letter or digit).
+Returns `1` if true, `0` if false.
 
 ---
 
@@ -43,8 +43,8 @@ Retorna `1` se verdadeiro, `0` se falso.
 ```c
 int ft_isascii(int c)
 ```
-Verifica se o valor está na tabela ASCII (0–127).
-Retorna `1` se verdadeiro, `0` se falso.
+Checks whether the value is within the ASCII table (0–127).
+Returns `1` if true, `0` if false.
 
 ---
 
@@ -53,20 +53,20 @@ Retorna `1` se verdadeiro, `0` se falso.
 ```c
 int ft_isprint(int c)
 ```
-Verifica se o caractere é imprimível (32–126).
-Retorna `1` se verdadeiro, `0` se falso.
+Checks whether the character is printable (32–126).
+Returns `1` if true, `0` if false.
 
 ---
 
-## Conversão de Caracteres
+## Character Conversion
 
 ### **ft_toupper**
 
 ```c
 int ft_toupper(int c)
 ```
-Converte uma letra minúscula em maiúscula.
-Retorna o caractere convertido, ou o original caso não seja minúscula.
+Converts a lowercase letter to uppercase.
+Returns the converted character, or the original if it is not a lowercase letter.
 
 ---
 
@@ -75,20 +75,20 @@ Retorna o caractere convertido, ou o original caso não seja minúscula.
 ```c
 int ft_tolower(int c)
 ```
-Converte uma letra maiúscula em minúscula.
-Retorna o caractere convertido, ou o original caso não seja maiúscula.
+Converts an uppercase letter to lowercase.
+Returns the converted character, or the original if it is not an uppercase letter.
 
 ---
 
-## Manipulação de Memória
+## Memory Manipulation
 
 ### **ft_memset**
 
 ```c
 void *ft_memset(void *s, int c, size_t n)
 ```
-Preenche os primeiros `n` bytes da área de memória `s` com o valor `c`.
-Retorna ponteiro para `s`.
+Fills the first `n` bytes of the memory area `s` with the value `c`.
+Returns a pointer to `s`.
 
 ---
 
@@ -97,8 +97,8 @@ Retorna ponteiro para `s`.
 ```c
 void ft_bzero(void *s, size_t n)
 ```
-Zera os primeiros `n` bytes da área de memória apontada por `s`.
-Retorna `void`.
+Zeros the first `n` bytes of the memory area pointed to by `s`.
+Returns `void`.
 
 ---
 
@@ -107,8 +107,8 @@ Retorna `void`.
 ```c
 void *ft_memcpy(void *dest, const void *src, size_t n)
 ```
-Copia `n` bytes de `src` para `dest`. As áreas não devem se sobrepor.
-Retorna ponteiro para `dest`.
+Copies `n` bytes from `src` to `dest`. The areas must not overlap.
+Returns a pointer to `dest`.
 
 ---
 
@@ -117,8 +117,8 @@ Retorna ponteiro para `dest`.
 ```c
 void *ft_memmove(void *dest, const void *src, size_t n)
 ```
-Copia `n` bytes de `src` para `dest`, tratando corretamente regiões sobrepostas.
-Retorna ponteiro para `dest`.
+Copies `n` bytes from `src` to `dest`, correctly handling overlapping regions.
+Returns a pointer to `dest`.
 
 ---
 
@@ -127,8 +127,8 @@ Retorna ponteiro para `dest`.
 ```c
 void *ft_memchr(const void *s, int c, size_t n)
 ```
-Busca a primeira ocorrência do byte `c` nos primeiros `n` bytes de `s`.
-Retorna ponteiro para o byte encontrado, ou `NULL` se não encontrado.
+Searches for the first occurrence of byte `c` in the first `n` bytes of `s`.
+Returns a pointer to the byte found, or `NULL` if not found.
 
 ---
 
@@ -137,8 +137,8 @@ Retorna ponteiro para o byte encontrado, ou `NULL` se não encontrado.
 ```c
 int ft_memcmp(const void *s1, const void *s2, size_t n)
 ```
-Compara os primeiros `n` bytes de duas áreas de memória.
-Retorna a diferença entre o primeiro byte divergente; `0` se iguais.
+Compares the first `n` bytes of two memory areas.
+Returns the difference between the first differing byte; `0` if equal.
 
 ---
 
@@ -147,20 +147,20 @@ Retorna a diferença entre o primeiro byte divergente; `0` se iguais.
 ```c
 void *ft_calloc(size_t nmemb, size_t size)
 ```
-Aloca memória para `nmemb` elementos de `size` bytes e inicializa tudo com zero.
-Retorna ponteiro para a memória alocada, ou `NULL` em caso de erro.
+Allocates memory for `nmemb` elements of `size` bytes and initializes everything to zero.
+Returns a pointer to the allocated memory, or `NULL` on error.
 
 ---
 
-## Manipulação de Strings
+## String Manipulation
 
 ### **ft_strlen**
 
 ```c
 size_t ft_strlen(const char *s)
 ```
-Calcula o comprimento da string, sem contar o caractere nulo `\0`.
-Retorna o número de caracteres da string.
+Calculates the length of the string, not counting the null character `\0`.
+Returns the number of characters in the string.
 
 ---
 
@@ -169,8 +169,8 @@ Retorna o número de caracteres da string.
 ```c
 size_t ft_strlcpy(char *dst, const char *src, size_t dsize)
 ```
-Copia `src` para `dst` com no máximo `dsize` bytes, garantindo terminação com `\0`.
-Retorna o tamanho de `src`.
+Copies `src` to `dst` with at most `dsize` bytes, guaranteeing null termination.
+Returns the length of `src`.
 
 ---
 
@@ -179,8 +179,8 @@ Retorna o tamanho de `src`.
 ```c
 size_t ft_strlcat(char *dst, const char *src, size_t dsize)
 ```
-Concatena `src` ao final de `dst`, respeitando o limite total de `dsize` bytes.
-Retorna o tamanho total que a string teria se não houvesse limite.
+Appends `src` to the end of `dst`, respecting the total limit of `dsize` bytes.
+Returns the total length the string would have had without the limit.
 
 ---
 
@@ -189,8 +189,8 @@ Retorna o tamanho total que a string teria se não houvesse limite.
 ```c
 char *ft_strchr(const char *s, int c)
 ```
-Busca a primeira ocorrência do caractere `c` na string `s`.
-Retorna ponteiro para o caractere encontrado, ou `NULL` se não encontrado.
+Searches for the first occurrence of character `c` in string `s`.
+Returns a pointer to the character found, or `NULL` if not found.
 
 ---
 
@@ -199,8 +199,8 @@ Retorna ponteiro para o caractere encontrado, ou `NULL` se não encontrado.
 ```c
 char *ft_strrchr(const char *s, int c)
 ```
-Busca a última ocorrência do caractere `c` na string `s`.
-Retorna ponteiro para o caractere encontrado, ou `NULL` se não encontrado.
+Searches for the last occurrence of character `c` in string `s`.
+Returns a pointer to the character found, or `NULL` if not found.
 
 ---
 
@@ -209,8 +209,8 @@ Retorna ponteiro para o caractere encontrado, ou `NULL` se não encontrado.
 ```c
 int ft_strncmp(const char *s1, const char *s2, size_t n)
 ```
-Compara os primeiros `n` caracteres de duas strings.
-Retorna a diferença entre o primeiro caractere divergente; `0` se iguais.
+Compares the first `n` characters of two strings.
+Returns the difference between the first differing character; `0` if equal.
 
 ---
 
@@ -219,8 +219,8 @@ Retorna a diferença entre o primeiro caractere divergente; `0` se iguais.
 ```c
 char *ft_strnstr(const char *big, const char *little, size_t len)
 ```
-Busca a string `little` dentro de `big`, limitando a busca aos primeiros `len` caracteres.
-Retorna ponteiro para o início de `little` em `big`, ou `NULL` se não encontrado.
+Searches for string `little` inside `big`, limiting the search to the first `len` characters.
+Returns a pointer to the start of `little` in `big`, or `NULL` if not found.
 
 ---
 
@@ -229,20 +229,20 @@ Retorna ponteiro para o início de `little` em `big`, ou `NULL` se não encontra
 ```c
 char *ft_strdup(const char *s)
 ```
-Cria uma cópia da string `s` alocando nova memória com `malloc`.
-Retorna ponteiro para a nova string, ou `NULL` em caso de erro.
+Creates a copy of string `s` by allocating new memory with `malloc`.
+Returns a pointer to the new string, or `NULL` on error.
 
 ---
 
-## Conversão de Tipos
+## Type Conversion
 
 ### **ft_atoi**
 
 ```c
 int ft_atoi(const char *nptr)
 ```
-Converte uma string para inteiro, ignorando espaços iniciais e respeitando sinal.
-Retorna o valor inteiro convertido.
+Converts a string to an integer, skipping leading whitespace and respecting sign.
+Returns the converted integer value.
 
 ---
 
@@ -251,20 +251,20 @@ Retorna o valor inteiro convertido.
 ```c
 char *ft_itoa(int n)
 ```
-Converte um inteiro para string, alocando memória para o resultado.
-Retorna ponteiro para a string gerada, ou `NULL` em caso de erro.
+Converts an integer to a string, allocating memory for the result.
+Returns a pointer to the generated string, or `NULL` on error.
 
 ---
 
-## Funções Adicionais de String
+## Additional String Functions
 
 ### **ft_substr**
 
 ```c
 char *ft_substr(char const *s, unsigned int start, size_t len)
 ```
-Extrai uma substring de `s` a partir do índice `start` com comprimento máximo `len`.
-Retorna ponteiro para a nova string, ou `NULL` em caso de erro.
+Extracts a substring from `s` starting at index `start` with a maximum length of `len`.
+Returns a pointer to the new string, or `NULL` on error.
 
 ---
 
@@ -273,8 +273,8 @@ Retorna ponteiro para a nova string, ou `NULL` em caso de erro.
 ```c
 char *ft_strjoin(char const *s1, char const *s2)
 ```
-Concatena `s1` e `s2` em uma nova string alocada.
-Retorna ponteiro para a nova string, ou `NULL` em caso de erro.
+Concatenates `s1` and `s2` into a newly allocated string.
+Returns a pointer to the new string, or `NULL` on error.
 
 ---
 
@@ -283,8 +283,8 @@ Retorna ponteiro para a nova string, ou `NULL` em caso de erro.
 ```c
 char *ft_strtrim(char const *s1, char const *set)
 ```
-Remove todos os caracteres presentes em `set` do início e do fim de `s1`.
-Retorna ponteiro para a string resultante, ou `NULL` em caso de erro.
+Removes all characters present in `set` from the beginning and end of `s1`.
+Returns a pointer to the resulting string, or `NULL` on error.
 
 ---
 
@@ -293,8 +293,8 @@ Retorna ponteiro para a string resultante, ou `NULL` em caso de erro.
 ```c
 char **ft_split(char const *s, char c)
 ```
-Divide a string `s` usando o caractere `c` como delimitador.
-Retorna array de strings terminado em `NULL`, ou `NULL` em caso de erro.
+Splits string `s` using character `c` as a delimiter.
+Returns a null-terminated array of strings, or `NULL` on error.
 
 ---
 
@@ -303,8 +303,8 @@ Retorna array de strings terminado em `NULL`, ou `NULL` em caso de erro.
 ```c
 char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 ```
-Cria uma nova string aplicando a função `f` a cada caractere de `s`, passando o índice.
-Retorna ponteiro para a nova string, ou `NULL` em caso de erro.
+Creates a new string by applying function `f` to each character of `s`, passing the index.
+Returns a pointer to the new string, or `NULL` on error.
 
 ---
 
@@ -313,20 +313,20 @@ Retorna ponteiro para a nova string, ou `NULL` em caso de erro.
 ```c
 void ft_striteri(char *s, void (*f)(unsigned int, char*))
 ```
-Aplica a função `f` a cada caractere de `s` modificando-o diretamente (in-place), passando o índice.
-Retorna `void`.
+Applies function `f` to each character of `s`, modifying it directly in-place, passing the index.
+Returns `void`.
 
 ---
 
-## Saída em File Descriptor
+## Output to File Descriptor
 
 ### **ft_putchar_fd**
 
 ```c
 void ft_putchar_fd(char c, int fd)
 ```
-Escreve o caractere `c` no file descriptor `fd`.
-Retorna `void`.
+Writes character `c` to file descriptor `fd`.
+Returns `void`.
 
 ---
 
@@ -335,8 +335,8 @@ Retorna `void`.
 ```c
 void ft_putstr_fd(char *s, int fd)
 ```
-Escreve a string `s` no file descriptor `fd`.
-Retorna `void`.
+Writes string `s` to file descriptor `fd`.
+Returns `void`.
 
 ---
 
@@ -345,8 +345,8 @@ Retorna `void`.
 ```c
 void ft_putendl_fd(char *s, int fd)
 ```
-Escreve a string `s` seguida de uma quebra de linha no file descriptor `fd`.
-Retorna `void`.
+Writes string `s` followed by a newline to file descriptor `fd`.
+Returns `void`.
 
 ---
 
@@ -355,53 +355,53 @@ Retorna `void`.
 ```c
 void ft_putnbr_fd(int n, int fd)
 ```
-Escreve o inteiro `n` no file descriptor `fd`.
-Retorna `void`.
+Writes integer `n` to file descriptor `fd`.
+Returns `void`.
 
 ---
 
-## Como compilar e usar
+## How to Compile and Use
 
-### Compilar a biblioteca
+### Compile the library
 
 ```bash
 make
 ```
 
-Gera o arquivo `libft.a` no diretório raiz.
+Generates the `libft.a` file in the root directory.
 
-### Limpar arquivos objeto
+### Remove object files
 
 ```bash
 make clean
 ```
 
-### Remover tudo (objetos + biblioteca)
+### Remove everything (objects + library)
 
 ```bash
 make fclean
 ```
 
-### Recompilar do zero
+### Recompile from scratch
 
 ```bash
 make re
 ```
 
-### Usar em seu projeto
+### Use in your project
 
-Copie `libft.a` e `lib/libft.h` para o diretório do seu projeto, inclua o header:
+Copy `libft.a` and `lib/libft.h` to your project directory, include the header:
 
 ```c
 #include "libft.h"
 ```
 
-E compile linkando a biblioteca:
+And compile linking the library:
 
 ```bash
-cc -Wall -Wextra -Werror main.c -L. -lft -o programa
+cc -Wall -Wextra -Werror main.c -L. -lft -o program
 ```
 
 ---
 
-*Projeto desenvolvido por [gabde-so](https://profile-v3.intra.42.fr/users/gabde-so) na [42 Barcelona](https://www.42barcelona.com/)*
+*Project developed at [42 Barcelona](https://www.42barcelona.com/)*
