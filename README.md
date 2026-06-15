@@ -404,4 +404,4 @@ cc -Wall -Wextra -Werror main.c -L. -lft -o program
 
 ---
 
-*Project developed at [42 Barcelona](https://www.42barcelona.com/)*
+*Projeto desenvolvido por [gabde-so](https://profile-v3.intra.42.fr/users/gabde-so) na [42 Barcelona](https://www.42barcelona.com/)*
